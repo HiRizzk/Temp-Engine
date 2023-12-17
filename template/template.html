@@ -1,0 +1,26 @@
+<!-- INCLUDE global/header.html -->	
+		<img src='../docs/images/preview.png' alt='preview' />
+		<p>
+			The following are the results of the examples given within the 
+			<a href='../docs/'>documentation</a> page.
+		</p>
+		<h2>Send php variables to the template:</h2>
+		<p>{VAR_1}</p>
+		<p>{VAR_2}</p>
+		<h2>Send looped data to the template:</h2>
+		<ul>
+		<!-- LOOP mysql -->
+			<li>{mysql.ROW_TITLE}</li>
+		<!-- LOOPELSE -->
+		<li>No looped items!</li>
+		<!-- END mysql -->
+		</ul>
+		<h2>Using IF / ELSE within template:</h2>
+		<!-- IF FALSE_VAR -->
+			<p>Hello World!</p>
+		<!-- ELSEIF TRUE_VAR -->
+			<p>{TRUE_VAR}</p>
+		<!-- ELSE -->
+			<p>Hello World!</p>
+		<!-- ENDIF -->
+<!-- INCLUDE global/footer.html -->
